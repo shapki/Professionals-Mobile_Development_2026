@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="matule_accent">#2074F2</color>
+    <color name="matule_accent_inactive">#C5D2FF</color>
+    <color name="matule_black">#2D2C2C</color>
+    <color name="matule_white">#F7F7F7</color>
+    <color name="matule_error">#FF4646</color>
+    <color name="matule_success">#00B412</color>
+    <color name="matule_input_bg">#F7F7FA</color>
+    <color name="matule_input_stroke">#E6E6E6</color>
+    <color name="matule_input_icon">#BFC7D1</color>
+    <color name="matule_placeholder">#98989A</color>
+    <color name="matule_description">#8787A1</color>
+    <color name="matule_card_stroke">#F2F2F2</color>
 </resources>
