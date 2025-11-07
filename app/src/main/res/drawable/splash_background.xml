@@ -24,9 +24,6 @@
                 android:startColor="#6269F0"
                 android:centerColor="#2254F5"
                 android:endColor="#6269F0"
-                android:startColor="#056269F0"
-                android:centerColor="#653740F5"
-                android:endColor="#056269F0"
                 android:angle="90" />
         </shape>
     </item>
