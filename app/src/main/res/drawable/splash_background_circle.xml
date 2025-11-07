@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schekit.android.com/apk/res/android"
+    tools:ignore="NamespaceTypo">
+    <item
+        android:width="453dp"
+        android:height="453dp"
+        android:gravity="bottom|end"
+        android:top="359dp"
+        android:left="-78dp">
+        <shape android:shape="oval">
+            <solid android:color="#83A0F8" />
+            <blur
+                android:radius="64dp"
+                android:renderingMode="software" />
+        </shape>
+    </item>
+    <item
+        android:width="453dp"
+        android:height="453dp"
+        android:gravity="top|start"
+        android:top="-227dp"
+        android:left="-227dp">
+        <shape android:shape="oval">
+            <solid android:color="#83A0F8" />
+            <blur
+                android:radius="64dp"
+                android:renderingMode="software" />
+        </shape>
+    </item>
+</layer-list>
