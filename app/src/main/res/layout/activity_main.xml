@@ -11,8 +11,8 @@
         android:id="@+id/bottomRightCircle"
         android:layout_width="453dp"
         android:layout_height="453dp"
-        android:background="@drawable/splash_background_circle"
         android:alpha="0.6"
+        android:background="@drawable/splash_background_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.2"
@@ -22,11 +22,11 @@
         android:id="@+id/topLeftCircle"
         android:layout_width="453dp"
         android:layout_height="453dp"
-        android:background="@drawable/splash_background_circle"
         android:alpha="0.6"
+        android:background="@drawable/splash_background_circle"
+        app:layout_constraintHorizontal_bias="-0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="-0.6"
         app:layout_constraintVertical_bias="-0.6" />
 
     <TextView
