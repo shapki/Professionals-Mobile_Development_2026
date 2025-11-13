@@ -9,6 +9,7 @@
     <color name="matule_error">#FF4646</color>
     <color name="matule_success">#00B412</color>
     <color name="matule_input_bg">#F7F7FA</color>
+    <color name="matule_input_bg2">#F5F5F9</color>
     <color name="matule_input_stroke">#E6E6E6</color>
     <color name="matule_input_icon">#BFC7D1</color>
     <color name="matule_placeholder">#98989A</color>

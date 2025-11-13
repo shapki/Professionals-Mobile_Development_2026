@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstRowLinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -18,13 +19,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/codeDots"
         android:layout_width="100sp"
         android:layout_height="16sp"
+        android:layout_marginTop="100dp"
+        android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="229dp">
+        app:layout_constraintTop_toBottomOf="@+id/signInTextView">
 
         <View
             android:id="@+id/pin_dot_1"
@@ -53,4 +57,183 @@
             android:layout_height="16dp"
             android:background="@drawable/pin_dot_empty" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeDots">
+
+        <LinearLayout
+            android:id="@+id/Row1LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyboard_btn1"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/keyboard_btn2"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/keyboard_btn3"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row2LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyboard_btn4"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/keyboard_btn5"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/keyboard_btn6"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row3LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyboard_btn7"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/keyboard_btn8"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/keyboard_btn9"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="12dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row4LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="-18dp"
+            tools:layout_editor_absoluteY="575dp">
+
+            <Button
+                android:id="@+id/keyboard_btn0"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="45dp"
+                android:backgroundTint="@color/matule_input_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <ImageButton
+                android:id="@+id/keyboard_btnDel"
+                android:layout_width="35dp"
+                android:layout_height="24dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/ic_outline_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
