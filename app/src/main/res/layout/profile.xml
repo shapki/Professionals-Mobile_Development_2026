@@ -92,15 +92,15 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/settingsButtonConstraintLayout"
+            android:id="@+id/notificationsButtonConstraintLayout"
             android:layout_width="335dp"
             android:layout_height="64dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="224dp">
+            app:layout_constraintTop_toBottomOf="@+id/ordersButtonConstraintLayout">
 
             <ImageView
-                android:id="@+id/settingsButtonIconImageView"
+                android:id="@+id/notificationsButtonIconImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -109,7 +109,7 @@
                 app:srcCompat="@drawable/settings" />
 
             <TextView
-                android:id="@+id/settingsButtonTextView"
+                android:id="@+id/notificationsButtonTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -117,15 +117,70 @@
                 android:text="Уведомления"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/settingsButtonIconImageView"
+                app:layout_constraintStart_toEndOf="@+id/notificationsButtonIconImageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Switch
-                android:id="@+id/switch1"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/notificationsButtonSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="183dp"
-                tools:layout_editor_absoluteY="10dp" />
+                android:textOff="OFF"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linksConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notificationsButtonConstraintLayout">
+
+            <TextView
+                android:id="@+id/linksPrivacyPolicyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Политика конфиденциальности"
+                android:textColor="@color/matule_placeholder"
+                android:textFontWeight="500"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/linksUserAgreementTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Пользовательское соглашение"
+                android:textColor="@color/matule_placeholder"
+                android:textFontWeight="500"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linksPrivacyPolicyTextView" />
+
+            <TextView
+                android:id="@+id/linksLogOutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Выход"
+                android:textColor="@color/matule_error"
+                android:textFontWeight="500"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linksUserAgreementTextView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
