@@ -44,8 +44,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/promotionConstraintLayout"
             android:layout_width="0dp"
-            android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchEditText">
@@ -61,6 +61,323 @@
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/promotionScrollView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/promotionTextView">
+
+                <LinearLayout
+                    android:id="@+id/promotionContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/promotion1"
+                        android:layout_width="270dp"
+                        android:layout_height="152dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/promotion1_gradient"
+                        android:clipToPadding="false"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/promotion1Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Шорты\nВторник"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promotion1Price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="4000 ₽"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/promotion1Title"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/promotion1Image"
+                            android:layout_width="146dp"
+                            android:layout_height="183dp"
+                            android:layout_marginTop="-16dp"
+                            android:layout_marginEnd="-16dp"
+                            android:layout_marginBottom="-16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/asset_covid19_shortsThuesday"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/promotion2"
+                        android:layout_width="270dp"
+                        android:layout_height="152dp"
+                        android:background="@drawable/promotion2_gradient"
+                        android:clipToPadding="false"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/promotion2Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Рубашка\nВоскресенье"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promotion2Price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="8000 ₽"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/promotion2Title"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/promotion2Image"
+                            android:layout_width="232dp"
+                            android:layout_height="152dp"
+                            android:layout_marginTop="-16dp"
+                            android:layout_marginEnd="-16dp"
+                            android:layout_marginBottom="-16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/asset_man_tShirtSaturday"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/catalogConstraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/promotionConstraintLayout">
+
+            <TextView
+                android:id="@+id/catalogTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Каталог описаний"
+                android:textColor="@color/matule_placeholder"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/filterScrollView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catalogTextView">
+
+                <LinearLayout
+                    android:id="@+id/filterButtonsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/allButton"
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/matule_accent"
+                        android:fontFamily="@font/roboto_flex"
+                        android:text="Все"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/womenButton"
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/matule_input_bg"
+                        android:fontFamily="@font/roboto_flex"
+                        android:text="Женщинам"
+                        android:textAllCaps="false"
+                        android:textColor="@color/matule_placeholder"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/menButton"
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/matule_input_bg"
+                        android:fontFamily="@font/roboto_flex"
+                        android:text="Мужчинам"
+                        android:textAllCaps="false"
+                        android:textColor="@color/matule_placeholder"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/kidsButton"
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/matule_input_bg"
+                        android:fontFamily="@font/roboto_flex"
+                        android:text="Детям"
+                        android:textAllCaps="false"
+                        android:textColor="@color/matule_placeholder"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/accessoriesButton"
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/matule_input_bg"
+                        android:fontFamily="@font/roboto_flex"
+                        android:text="Аксессуары"
+                        android:textAllCaps="false"
+                        android:textColor="@color/matule_placeholder"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:id="@+id/productsScrollView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filterScrollView">
+
+                <LinearLayout
+                    android:id="@+id/productsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/productItem1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/product_item_background"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/productTitle1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Рубашка Воскресенье для машинного вязания"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/productCategory1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Мужская одежда"
+                            android:textColor="@color/matule_placeholder"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/productTitle1" />
+
+                        <TextView
+                            android:id="@+id/productPrice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="300 ₽"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/productCategory1" />
+
+                        <Button
+                            android:id="@+id/addButton1"
+                            style="@style/AddButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/matule_accent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Добавить"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/productPrice1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/productTitle1"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </ScrollView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
