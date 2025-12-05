@@ -30,7 +30,7 @@
     </style>
     <style name="MatuleTextInputShape">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">10px</item>
+        <item name="cornerSize">10dp</item>
     </style>
     <style name="MatuleEditTextStyle">
         <item name="android:background">@drawable/text_input_background</item>
@@ -40,5 +40,64 @@
         <item name="android:padding">12dp</item>
         <item name="android:drawableTint">@color/matule_accent</item>
         <item name="android:textCursorDrawable">@drawable/text_cursor</item>
+    </style>
+    <style name="MatuleDropdownStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dropdown_background</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">40dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:hint">Выберите</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_down</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="MatuleDropdownItemStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="MatuleDateInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Плейсхолдер и хинт -->
+        <item name="hintTextColor">@color/matule_placeholder</item>
+        <item name="placeholderTextColor">@color/matule_placeholder</item>
+
+        <!-- Фон и контур -->
+        <item name="boxBackgroundColor">@color/matule_input_bg</item>
+        <item name="boxBackgroundMode">outline</item>
+
+        <item name="boxStrokeColor">@color/matule_date_stroke_color_selector</item>
+        <item name="boxStrokeWidth">1px</item>
+        <item name="boxStrokeWidthFocused">1px</item>
+
+        <item name="shapeAppearanceOverlay">@style/MatuleDateInputShape</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="endIconTint">@color/matule_placeholder</item>
+        <item name="colorControlActivated">@color/matule_accent</item>
+    </style>
+
+    <style name="MatuleDateInputShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10DP</item>
+    </style>
+
+    <style name="MatuleDateEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/matule_placeholder</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:digits">0123456789.</item>
+        <item name="android:maxLength">10</item>
     </style>
 </resources>

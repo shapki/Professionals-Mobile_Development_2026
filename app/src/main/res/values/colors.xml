@@ -15,4 +15,6 @@
     <color name="matule_placeholder">#98989A</color>
     <color name="matule_description">#8787A1</color>
     <color name="matule_card_stroke">#F2F2F2</color>
+    <color name="matule_caption">#939396</color>
+    <color name="matule_icons">#B8C1CC</color>
 </resources>

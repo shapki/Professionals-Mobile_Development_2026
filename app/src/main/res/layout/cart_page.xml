@@ -41,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:background="@android:color/transparent"
+                android:tint="@color/matule_icons"
                 app:layout_constraintBottom_toBottomOf="@+id/titleTextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"

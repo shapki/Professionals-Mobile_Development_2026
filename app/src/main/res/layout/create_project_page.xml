@@ -32,7 +32,185 @@
             android:id="@+id/projectFieldsContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/projectTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Тип"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/projectTypeDropdownField"
+                style="@style/MatuleDropdownStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Выберите тип" />
+
+            <TextView
+                android:id="@+id/projectNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Название проекта"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/projectNameEditText"
+                style="@style/MatuleEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите имя"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/dateStartTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Дата начала"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateStartInputLayout"
+                style="@style/MatuleDateInputStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateStartEditText"
+                    style="@style/MatuleDateEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="--.--.----"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/dateEndTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Дата Окончания"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateEndInputLayout"
+                style="@style/MatuleDateInputStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateEndEditText"
+                    style="@style/MatuleDateEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="--.--.----"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/chooseWhoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Кому"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/chooseWhoDropdownField"
+                style="@style/MatuleDropdownStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Выберите кому" />
+
+            <TextView
+                android:id="@+id/deskTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Источник описания"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/deskEditText"
+                style="@style/MatuleEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="example.com"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="Категория"
+                android:textColor="@color/matule_description"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/categoryDropdownField"
+                style="@style/MatuleDropdownStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Выберите категорию" />
+
+            <ImageButton
+                android:id="@+id/selectImageButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_select_image" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/orderButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/cart_button_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">>
+
+                <TextView
+                    android:id="@+id/cartTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Подтвердить"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout

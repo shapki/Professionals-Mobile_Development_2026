@@ -57,7 +57,7 @@
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="Акции и новости"
-                android:textColor="@color/matule_placeholder"
+                android:textColor="@color/matule_caption"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -201,7 +201,7 @@
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="Каталог описаний"
-                android:textColor="@color/matule_placeholder"
+                android:textColor="@color/matule_caption"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -341,7 +341,7 @@
                             android:layout_marginTop="15dp"
                             android:fontFamily="@font/roboto_bold"
                             android:text="Мужская одежда"
-                            android:textColor="@color/matule_placeholder"
+                            android:textColor="@color/matule_caption"
                             android:textSize="14sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/productTitle1" />
