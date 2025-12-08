@@ -186,29 +186,19 @@
                 android:background="@android:color/transparent"
                 app:srcCompat="@drawable/ic_select_image" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <Button
                 android:id="@+id/orderButton"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/cart_button_background"
+                android:backgroundTint="@color/matule_accent"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Подтвердить"
+                android:textSize="17sp"
+                app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">>
-
-                <TextView
-                    android:id="@+id/cartTitleTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="Подтвердить"
-                    android:textColor="@color/white"
-                    android:textSize="17sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintStart_toStartOf="parent"/>
 
         </LinearLayout>
     </ScrollView>
